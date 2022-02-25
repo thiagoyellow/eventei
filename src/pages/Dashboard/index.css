@@ -89,7 +89,7 @@
   }
   
   #page-home main a:hover {
-    background-color: rgb(226, 120, 21);
+    background-color: var(--button-hover);
   }
   
   #page-home main a span {

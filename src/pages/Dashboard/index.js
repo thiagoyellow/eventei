@@ -7,7 +7,7 @@ export function Dashboard() {
         <div class="content">
             <header>
                 <h3>Eventei<strong> .</strong></h3>
-                <a href="#">
+                <a href="/criar-evento">
                     <span></span>
                     Cadastre um novo evento
                 </a>

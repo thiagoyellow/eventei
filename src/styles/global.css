@@ -1,6 +1,7 @@
 :root {
   --title-color: #322153;
   --primary-color: #F2994A;
+  --button-hover: rgb(226, 120, 21);
 }
 
 * {

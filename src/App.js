@@ -4,7 +4,7 @@ import './styles/responsive.css';
 
 export function Home() {
   return (
-     <Routes /> 
+     <Routes />
   )
 }
 
