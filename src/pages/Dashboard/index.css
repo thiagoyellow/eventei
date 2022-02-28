@@ -7,7 +7,7 @@
   }
   
   #page-home .content {
-    width: 90%;
+    width: 100%;
     max-width: 1100px;
     height: 100%;
   
@@ -19,6 +19,7 @@
   
   #page-home .content h3 {
     font-size: 50px;
+    margin: 2px 0 0 45px;
   }
   
   #page-home strong {

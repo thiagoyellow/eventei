@@ -1,38 +1,4 @@
-#page-create-event {
-    width: 90%;
-    max-width:1100px;
-    
-    /* alinhamento de caixa pelo lado de fora */
-    margin: 0 auto;
-}
-
-
-#page-create-event header {
-    margin-top: 48px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#page-create-event header a{
-    color: var(--title-color);
-    font-weight: bold;
-
-    display: flex;
-    align-items: center;
-}
-
-#page-create-event header a span {
-    margin-right: 16px;
-    background-image: url(../../../public/assets/arrow-left.svg);
-    display: flex;
-
-    width: 20px;
-    height: 24px;
-}
-
-form {
+.createevent {
     background-color: white;
 
     margin: 80px auto;
@@ -41,10 +7,9 @@ form {
     border-radius: 8px;
 
     max-width: 730px;
-
 }
 
-form h1 {
+form  h1 {
     font-size: 36px;
 }
 
@@ -54,7 +19,7 @@ form fieldset {
     border: 0;
 }
 
-form legend {
+form  legend {
     margin-bottom: 40px;
 }
 
@@ -62,7 +27,7 @@ form legend h2 {
     font-size: 24px;
 }
 
-form .field {
+.createevent .field {
     flex: 1;
 
     display: flex;
@@ -72,12 +37,12 @@ form .field {
 
 }
 
-form .field-group {
+form  .field-group {
     display: flex;
 }
 
 form input,
-form select {
+form  select {
     background-color: #f0f0f5;
 
     border: 0;
@@ -87,16 +52,16 @@ form select {
     border-radius: 8px;
 }
 
-form label {
+form  label {
     font-size: 14px;
     margin-bottom: 8px;
 }
 
-form .field-group .field + .field {
+form  .field-group .field + .field {
     margin-left: 24px;
 }
 
-form button {
+form  button {
     width: 260px;
     height: 56px;
 
@@ -116,7 +81,7 @@ form button {
     transition: background-color 400ms;
 }
 
-form button:hover {
+form  button:hover {
     background-color: var(--button-hover);
     
 }

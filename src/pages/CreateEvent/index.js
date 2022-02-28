@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
+import { Header } from '../../components/Header';
 import '../../styles/responsive.css';
 import '../CreateEvent/index.css'
 
@@ -13,65 +14,11 @@ export function CreateEvent() {
     }
 
 
-    // //TIPO DE EVENTO
-    // //Pegar todos os li's
-    // const typeOfEvent = document.querySelectorAll(".items-grid li")
-    
-    // for (const type  of typeOfEvent) {
-    //     type.addEventListener("click", handleSelectedItem)
-    // }
-
-    // const collectedItems = document.querySelector("input[name=items]")
-
-    // let selectedItems = [2]
-
-    // function handleSelectedItem(event) {
-    //     const itemLi = event.targets
-       
-    //     //adicionar ou remover uma classe com javascript
-    //     itemLi.classList.toggle("selected")
-
-    //     const itemId = itemLi.dataset.id
-
-    //     //verificar se existem tipos selecionados, se sim pega-los
-    //     const alreadySelected = selectedItems.findIndex( item => {
-    //         const itemFound = item = itemId
-    //         return itemFound
-    //     })
-
-    //     // se ja tiver selecionado, tirar da seleção
-
-    //     if(alreadySelected >= 0) {
-    //         const filteredItems = selectedItems.filter( item => {
-    //             const itemIsDifferent = item != itemId
-    //             return itemIsDifferent
-    //         })
-
-    //         selectedItems = filteredItems
-    //     } else {
-    //         selectedItems.push(itemId)
-    //     }
-    //     // se nao tiver selecionado, selecionar
-
-    //     // atualizar o campo escondido com os items selecionados
-    //     collectedItems.value = selectedItems
-    // }
-
-
-
-
     return (
-            <div id="page-create-event">
-                <div class="content">
-                        <header>
-                            <h3>Eventei<strong> .</strong></h3>
-                            <a href="/">
-                                <span></span>
-                                Voltar para home
-                            </a>
-                        </header>
-                </div>
-                <form action="" onSubmit={handleSubmit(onSubmit)}>
+        <>
+         <div id="page-create-event">
+        <Header />
+                <form className="createevent" action="" onSubmit={handleSubmit(onSubmit)}>
                     <h1>Cadastro de Evento</h1>
     
                     <fieldset>
@@ -178,5 +125,7 @@ export function CreateEvent() {
                     <button type="submit">Cadastrar evento</button>
                 </form>
             </div>
+        </>
+           
         )
 }
