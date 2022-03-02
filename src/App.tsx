@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === 'development') {
   makeServer();
 }
 
-export function Home() {
+export function App() {
 
   return (
     <EventsProvider>
@@ -17,6 +17,6 @@ export function Home() {
   )
 }
 
-export default Home;
+export default App;
 
 

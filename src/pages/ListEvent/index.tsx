@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import { Header } from '../../components/Header';
-import { EventsContext } from '../../EventsContext';
 
 import './index.css';
 import '../../styles/global.css'
 import '../../styles/responsive.css'
+import { EventsContext } from '../../EventsContext';
 
 
 export function ListEvent() {
