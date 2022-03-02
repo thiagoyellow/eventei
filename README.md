@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# EVENTEI .
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>Cadastre, Busque e compre ingressos para seu evento favorito</p>
 
-## Available Scripts
+</p>
 
-In the project directory, you can run:
+<img align="right" src=".github/chef.png?raw=true" height="240">
 
-### `npm start`
+## Tópicos 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Sobre o Foodfy](#sobre-o-eventei)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Funcionalidades](#funcionalidades)
 
-### `npm test`
+[Tecnologias e Ferramentas](#tecnologias-e-ferramentas)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Instalação e uso](#instalação-e-uso)
 
-### `npm run build`
+[Licença](#licença)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Sobre o Eventei
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O Eventei foi um desafio da Mb Labs cuja a proposta era criar uma aplicação para gerenciar eventos ( Comprar e buscar eventos próximos ).
 
-### `npm run eject`
+<h3 align="center">Homepage</h3>
+<p align="center">
+  <img src=".github/Homepage.png" alt="página principal">
+</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<h3 align="center">Pagina de criação de evento</h3>
+<p align="center">
+  <img src=".github/CadastroEvento.png" alt="página cadastro">
+</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br>
 
-## Learn More
+<h3 align="center">Modal de Busca de evento</h3>
+<p align="center">
+  <img src=".github/Modal.png" alt="modal">
+</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h3 align="center">Resultados da Busca</h3>
+<p align="center">
+  <img src=".github/ListaEventos.png" alt="resultados">
+</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br>
 
-### Code Splitting
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Funcionalidades
 
-### Analyzing the Bundle Size
+- [X] Busque por eventos próximos a você.
+- [X] Cadastre um novo evento publicamente.
+- [X] Compre o ingresso para um evento.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<br>
 
-### Making a Progressive Web App
+## Tecnologias e Ferramentas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
 
-### Advanced Configuration
+- [HTML](https://devdocs.io/html/)
+- [CSS](https://devdocs.io/css/)
+- [JavaScript](https://devdocs.io/javascript/)
+- [ReactJS](https://pt-br.reactjs.org/)
+- [NodeJS](https://nodejs.org/en/)
+- [Typescript](https://www.typescriptlang.org/)
+- [MirageJS](https://miragejs.com/)
+- [AXIOS](https://axios-http.com/ptbr/docs/intro)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<br>
 
-### Deployment
+## Instalação e Uso
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Para rodar a aplicação, você precisa Seguir os passos abaixo:
 
-### `npm run build` fails to minify
+```bash
+# Abra um terminal e copie este repositório com o comando
+$ git clone https://github.com/thiagoyellow/eventei.git
+# ou use a opção de download.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Entre na pasta com 
+$ cd eventei
+
+# Instale as dependências
+$ npm install
+
+# Rode a aplicação
+$ npm start
+```
+
+**Importante:** Não exclua ou altere as imagens diretamente da pasta `public/assets`, pois as paginas compartilham desses arquivos entre si. 
+
+
+<br>
+
+## Licença
+<a href="https://opensource.org/licenses/MIT">
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-6558C3?style=flat-square">
+</a>
+
+<br>
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
+
+---
+
+Feito com :purple_heart: by [THIAGO G SANTOS](https://github.com/thiagoyellow/)
