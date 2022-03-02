@@ -4,22 +4,17 @@ import { Header } from '../../components/Header';
 import './index.css';
 import '../../styles/global.css'
 import '../../styles/responsive.css'
-import { EventsContext } from '../../EventsContext';
+import { EventsContext } from '../../EventsContext.tsx';
 
 
 export function ListEvent() {
-    const events = useContext(EventsContext);
+    const { events } = useContext(EventsContext);
 
- 
     return (
     <>
     <div id="page-search-results">
     <Header />
         <main>
-            <h4>
-                <strong> 2 eventos </strong> encontrados
-            </h4>
-
             <div className="cards">
                 {events.map(event => {
                     return (

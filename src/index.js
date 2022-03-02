@@ -8,24 +8,6 @@ createServer({
     event: Model,
   },
 
-  // seeds(server) {
-  //   server.create('event',
-  //       {
-  //         id: 1,
-  //         file: '', 
-  //         name: 'Bloco do Dev',
-  //         address: 'SAUS bloco K',
-  //         complement: 'Sala 302',
-  //         uf: 'DF',
-  //         city: 'Brasilia',
-  //         date: '08/03/2022',
-  //         time: '18:00',
-  //         price: 100,
-  //         type: 'Festival'
-  //       }
-  //   })
-  // },
-
   routes() {
     this.namespace = 'api';
 

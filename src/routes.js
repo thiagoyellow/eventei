@@ -1,9 +1,9 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
-import { Dashboard } from './pages/Dashboard/index.tsx';
+import { Dashboard } from './pages/Dashboard';
 import { CreateEvent } from '../src/pages/CreateEvent/index.tsx';
-import { ListEvent } from '../src/pages/ListEvent/index.tsx'
+import { ListEvent } from '../src/pages/ListEvent'
 
 export default function Routes() {
     return(

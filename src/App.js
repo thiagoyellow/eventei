@@ -1,14 +1,14 @@
 import './index.css';
-import Routes from './routes';
-import { makeServer } from './services/mirage';
+import Routes from './routes'
+import { makeServer } from './services/mirage/index.ts';
 import './styles/responsive.css';
-import { EventsProvider } from './EventsContext'
+import  { EventsProvider }  from './EventsContext.tsx'
 
 if (process.env.NODE_ENV === 'development') {
   makeServer();
 }
 
-export function App() {
+function App() {
 
   return (
     <EventsProvider>
@@ -18,5 +18,4 @@ export function App() {
 }
 
 export default App;
-
 

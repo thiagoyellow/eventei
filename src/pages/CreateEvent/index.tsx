@@ -1,11 +1,15 @@
-import { FormEvent, useState } from 'react';
+import { FormEvent, useState, useContext } from 'react';
+import { useHistory } from 'react-router-dom';
 
 import { Header } from '../../components/Header';
-import { api } from '../../services/api';
+import { EventsContext } from '../../EventsContext.tsx';
+
 import '../../styles/responsive.css';
 import '../CreateEvent/index.css'
 
 export function CreateEvent() {
+    
+    const { createEvent } = useContext(EventsContext);
 
     const [file, setFile] = useState('');
     const [name, setName] = useState('');
@@ -17,14 +21,15 @@ export function CreateEvent() {
     const [time, setTime] = useState('');
     const [price, setPrice] = useState(0);
     const [checkbox, setCheckbox] = useState('');
+
+    const history = useHistory();
     
-    function handleCreateNewEvent (event: FormEvent) {
+    async function handleCreateNewEvent (event: FormEvent) {
         event.preventDefault();
 
-        const data = {
+       await createEvent({
             file,
             name,
-            address,
             complement,
             uf,
             city,
@@ -32,9 +37,8 @@ export function CreateEvent() {
             time,
             price,
             checkbox
-        };
+        })
 
-        api.post('/eventos', data)
 
         // Limpar todos os campos após cadastrar os dados
         setFile('');
@@ -48,6 +52,7 @@ export function CreateEvent() {
         setPrice(0);
         setCheckbox('');
 
+        history.push('/eventos');
     }
 
 

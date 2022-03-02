@@ -15,11 +15,20 @@ interface Event {
   type: string;
 }
 
+type EventInput = Omit<Event, 'id' >;  //para tirar a propriedade que eu não quero
+
 interface EventsProviderProps {
   children: ReactNode;
 }
 
-export const EventsContext = createContext<Event[]>([]);
+interface EventsContextData {
+  events: Event[];
+  createEvent: (event: EventInput) => Promise<void>;
+}
+
+export const EventsContext = createContext<EventsContextData>(
+  {} as EventsContextData 
+);
 
 export function EventsProvider({ children }: EventsProviderProps) {
   const [events, setEvents] = useState<Event[]>([]);
@@ -29,8 +38,21 @@ export function EventsProvider({ children }: EventsProviderProps) {
       .then(response => setEvents(response.data.events))
   }, []);
 
+  async function createEvent(eventInput: EventInput) {
+    const response = await api.post('/eventos',{
+      ...eventInput,
+      createdAt: new Date(),
+    })
+    const { event } = response.data;
+
+    setEvents([
+      ...events,
+      event,
+    ]);
+  }
+
   return (
-    <EventsContext.Provider value={events}>
+    <EventsContext.Provider value={{ events, createEvent}}>
       { children }
     </EventsContext.Provider>
   )
