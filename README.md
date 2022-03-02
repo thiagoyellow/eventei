@@ -2,9 +2,6 @@
 
 <p>Cadastre, Busque e compre ingressos para seu evento favorito</p>
 
-</p>
-
-<img align="right" src=".github/chef.png?raw=true" height="240">
 
 ## Tópicos 
 
@@ -46,7 +43,7 @@ O Eventei foi um desafio da Mb Labs cuja a proposta era criar uma aplicação pa
 
 <h3 align="center">Resultados da Busca</h3>
 <p align="center">
-  <img src=".github/ListaEventos.png" alt="resultados">
+  <img src=".github/Lista.png" alt="resultados">
 </p>
 
 <br>
